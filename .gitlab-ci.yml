@@ -1,0 +1,8 @@
+include:
+  - project: 'devops/templates/gitlab-ci-templates'
+    ref: master
+    file: '.dotnet-deploy-nugetpkg-template.yml'
+
+variables:
+  NUGET_CSPRJ_BASE_PATH: './Shared.Repository/'
+  NUGET_CSPRJ_FULL_PATH: './Shared.Repository/Shared.Repository.csproj'
